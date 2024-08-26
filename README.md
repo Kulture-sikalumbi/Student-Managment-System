@@ -10,13 +10,13 @@ cd Student-Managment-System
 Finaly execute the following command in your terminal:
 python Studentmanagmentsystem.py
 # all commands
--firts: git clone https://github.com/Kulture-sikalumbi/Student-Managment-System.git
+1: git clone https://github.com/Kulture-sikalumbi/Student-Managment-System.git
 
--second: cd Student-Managment-System 
+2: cd Student-Managment-System 
 
--third: python Studentmanagmentsystem.py
+3: python Studentmanagmentsystem.py
 
-  Altenatively you can just navigate to the code's file , copy and  paste the code  in your IDE and run it in your IDE !
+  Altenatively you can just navigate to the code's file , copy and  paste the code  in your IDE and run it in your machine !
 
 
 
