@@ -3,11 +3,14 @@ The code in this repository is for a simple student managment system that allows
 # How to run the code
 firstly please make sure Git is installed on your machine before trying to clone this repository!
 
-clone the repository by copying the repository  link and then paste and run it in your terminal, 
-Navigate to the files directory by pasting and runing this command:
+-step1: clone the repository by copying the repository  link and then paste and run it in your terminal. 
+
+-step2: Navigate to the files directory by pasting and runing this command:
+
 cd Student-Managment-System 
 
-Finaly execute the following command in your terminal:
+-step3: Finaly execute the following command in your terminal:
+
 python Studentmanagmentsystem.py
 # all commands
 1: git clone https://github.com/Kulture-sikalumbi/Student-Managment-System.git
