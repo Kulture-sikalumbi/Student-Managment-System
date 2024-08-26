@@ -10,9 +10,9 @@ cd Student-Managment-System
 Finaly execute the following command in your terminal:
 python Studentmanagmentsystem.py
 # all commands
-1.firts: git clone https://github.com/Kulture-sikalumbi/Student-Managment-System.git
-2.second: cd Student-Managment-System 
-3.third: python Studentmanagmentsystem.py
+-firts: git clone https://github.com/Kulture-sikalumbi/Student-Managment-System.git
+-second: cd Student-Managment-System 
+-third: python Studentmanagmentsystem.py
 
 # Quick how to steps
 - clone the repository on your machine by copying this repoistorie's  link and executing it in your terminal:
