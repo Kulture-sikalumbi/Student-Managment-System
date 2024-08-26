@@ -12,6 +12,8 @@ cd Student-Managment-System
 -step3: Finaly execute the following command in your terminal:
 
 python Studentmanagmentsystem.py
+
+ALL set the the Student managment Sytem is now running!
 # all commands
 1: git clone https://github.com/Kulture-sikalumbi/Student-Managment-System.git
 
