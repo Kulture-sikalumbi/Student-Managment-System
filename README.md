@@ -21,7 +21,7 @@ ALL set the  Student managment Sytem is now running!
 
 3: python Studentmanagmentsystem.py
 
-  Altenatively you can just navigate to the code's file , copy and  paste the code  in your IDE and run it in your machine !
+  Altenatively you can just navigate to the code's file , copy and  paste the code  in your IDE and run it on your machine !
 
 
 
