@@ -1,5 +1,5 @@
 
-class StudentInfo:
+class StudentInfo:# represents a students information
     def __init__(self, id, name, age, major): # Initialize a new student with ID, name, age, and major
             
         self.id = id
