@@ -14,6 +14,8 @@ cd Student-Managment-System
 python Studentmanagmentsystem.py
 
 ALL set the  Student managment Sytem is now running!
+
+ Altenatively you can just navigate to the code's file , copy and  paste the code  in your IDE and run it on your machine !
 # All commands to run the system on your local machine
 Execute the commands in the numbered oder
 
@@ -23,7 +25,7 @@ Execute the commands in the numbered oder
 
 3: python Studentmanagmentsystem.py
 
-  Altenatively you can just navigate to the code's file , copy and  paste the code  in your IDE and run it on your machine !
+ 
   # All changes that were made to code
   1.The students class had too many responsibilities therefore all the methods in the students  class were separated to into different classes based on their functionality, made  separate classes for updating ,adding and displaying student details.This was done to adhere to the single responsibility and the Keep it simple stupid  principles.
   
