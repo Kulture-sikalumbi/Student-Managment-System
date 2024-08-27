@@ -1,18 +1,22 @@
 #class holds student infomation
 class StudentInfo:
     def __init__(self, id, name, age, major):
+             # Initialize a new student with ID, name, age, and major
         self.id = id
         self.name = name
         self.age = age
         self.major = major
-
+        
+# Handles updating student attributes (name, age, major)
 class StudentUpdater:
     def __init__(self, student):
         self.student = student
-
+        
+# Update the student's attributes if new values are provided
     def update_student(self, name=None, age=None, major=None):
         update_student_attributes(self.student, name, age, major)
-
+        
+# Displays formatted student information
 class StudentDisplay:
     def __init__(self, student):
         self.student = student
@@ -20,7 +24,7 @@ class StudentDisplay:
     def display_student(self):
         print(format_student(self.student))
 
-def update_student_attributes(student, name=None, age=None, major=None):
+def update_student_attributes(student, name=None, age=None, major=None):# updates student details if new values are proided
     if name:
         student.name = name
     if age:
@@ -28,12 +32,12 @@ def update_student_attributes(student, name=None, age=None, major=None):
     if major:
         student.major = major
 
-def format_student(student):
+def format_student(student):#    Format student information for display
     return f"ID: {student.id}, Name: {student.name}, Age: {student.age}, Major: {student.major}"
 
 from abc import ABC, abstractmethod
 
-class IStudentRepository(ABC):
+class IStudentRepository(ABC):#  Interface for student repository operations
     def __init__(self):
         self.students = None
 
@@ -53,32 +57,32 @@ class IStudentRepository(ABC):
     def get_student_by_id(self, student_id):
         pass  #  method to retrieve a student by ID
 
-class StudentDatabase(IStudentRepository):
+class StudentDatabase(IStudentRepository):#Implements the IStudentRepository interface to manage student data
     def __init__(self):
         super().__init__()
         self.students = []
 
-    def add_student(self, student):
+    def add_student(self, student):#Add a new student to the repository
         self.students.append(student)
 
-    def remove_student(self, student_id):
+    def remove_student(self, student_id):#remove student
         for student in self.students:
             if student.id == student_id:
                 self.students.remove(student)
                 break
 
-    def display_all_students(self):
+    def display_all_students(self):# displays all students in the repository
         for student in self.students:
             display = StudentDisplay(student)
             display.display_student()
 
-    def get_student_by_id(self, student_id):
+    def get_student_by_id(self, student_id):# displays student
         for student in self.students:
             if student.id == student_id:
                 return student
         return None
 
-class StudentManagementSystem:
+class StudentManagementSystem: # manages all the system operations
     def __init__(self, repository: IStudentRepository):
         self.database = repository
         self.updater = StudentUpdater(None)
