@@ -1,7 +1,7 @@
-#class holds student infomation
+
 class StudentInfo:
-    def __init__(self, id, name, age, major):
-             # Initialize a new student with ID, name, age, and major
+    def __init__(self, id, name, age, major): # Initialize a new student with ID, name, age, and major
+            
         self.id = id
         self.name = name
         self.age = age
@@ -36,7 +36,7 @@ def format_student(student):#    Format student information for display
     return f"ID: {student.id}, Name: {student.name}, Age: {student.age}, Major: {student.major}"
 
 from abc import ABC, abstractmethod
-
+# working as an abstraction layer between student managment system and student database
 class IStudentRepository(ABC):#  Interface for student repository operations
     def __init__(self):
         self.students = None
@@ -76,7 +76,7 @@ class StudentDatabase(IStudentRepository):#Implements the IStudentRepository int
             display = StudentDisplay(student)
             display.display_student()
 
-    def get_student_by_id(self, student_id):# displays student
+    def get_student_by_id(self, student_id):# displays student by id
         for student in self.students:
             if student.id == student_id:
                 return student
@@ -153,6 +153,6 @@ class StudentManagementSystem: # manages all the system operations
                 print("Invalid choice. Please select 1, 2, 3, 4, or 5.")
 
 if __name__ == "__main__":
-    database_instance = StudentDatabase()
-    sys = StudentManagementSystem(repository=database_instance)
-    sys.display_menu()
+    database_instance = StudentDatabase() # Create an instance of StudentDatabase
+    sys = StudentManagementSystem(repository=database_instance) # Initialize the StudentManagementSystem with the database instance
+    sys.display_menu()# Display the main menu of the Student Management System
